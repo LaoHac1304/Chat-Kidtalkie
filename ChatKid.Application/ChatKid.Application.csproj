@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\ViewModels\ServiceViewModels\**" />
+    <EmbeddedResource Remove="Models\ViewModels\ServiceViewModels\**" />
+    <None Remove="Models\ViewModels\ServiceViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChatKid.Common\ChatKid.Common.csproj" />
+    <ProjectReference Include="..\ChatKid.DataLayer\ChatKid.DataLayer.csproj" />
+    <ProjectReference Include="..\ChatKid.OpenAI\ChatKid.OpenAI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.21" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.5" />
+  </ItemGroup>
+
+</Project>

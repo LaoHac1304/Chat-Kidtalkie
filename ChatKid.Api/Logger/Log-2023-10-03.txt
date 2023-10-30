@@ -1,0 +1,13 @@
+ERROR[2023-10-03 9:18:57]:: ChatCompletionService:: Data: string||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-em0Ps***************************************0YOH. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\TEST Ki 7\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]

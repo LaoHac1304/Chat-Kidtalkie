@@ -1,0 +1,11 @@
+ERROR[2023-10-24 13:55:03]:: GoogleAuthenticationService:: Data: ya29.a0AfB_byD1-Dgs-Xh1Z7Y5qrWghkdKUdpFPvG8ZP6-qPPhKoDB6ZZ6DH0_ealgcJIMxA-8BuCSzzjI16Wh5FgPzOYeNGLwQg8VrOLe-QtVeWShoKHBkTkjjHs7HaRnbV2yCsFygpvXIv7qbjShDq8TO177Nypue6eyGKIaCgYKAaESARMSFQGOcNnCel0v09TSGG6mHkBmEvCeog0170||Message: No such host is known. (www.googleapis.com:443)||Inner: No such host is known.||StackTrace:    at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ChatKid.GoogleServices.GoogleAuthentication.GoogleAuthenticationService.GoogleLogin(String token) in F:\ChatKid\ChatKid.GoogleServices\GoogleAuthentication\GoogleAuthenticationService.cs:line 29||Source: System.Net.Http[ENDLOG]

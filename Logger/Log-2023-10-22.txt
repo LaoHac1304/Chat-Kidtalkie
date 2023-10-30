@@ -1,0 +1,78 @@
+ERROR[2023-10-22 21:24:26]:: ChatCompletionService:: Data: Faker tuyển Hàn Quốc là ai?||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-ZhwKa***************************************2GXv. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\Chat-real-time-kidtalkie\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]
+ERROR[2023-10-22 21:40:20]:: ChatCompletionService:: Data: Faker tuyển Hàn Quốc là ai?||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-ZhwKa***************************************2GXv. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\Chat-real-time-kidtalkie\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]
+ERROR[2023-10-22 21:44:56]:: ChatCompletionService:: Data: Faker tuyển Hàn Quốc là ai?||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-ZhwKa***************************************2GXv. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\Chat-real-time-kidtalkie\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]
+ERROR[2023-10-22 21:46:02]:: ChatCompletionService:: Data: Faker tuyển Hàn Quốc là ai?||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-ZhwKa***************************************2GXv. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\Chat-real-time-kidtalkie\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]
+ERROR[2023-10-22 21:58:07]:: ChatCompletionService:: Data: Faker tuyển Hàn Quốc là ai?||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-ZhwKa***************************************2GXv. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\Chat-real-time-kidtalkie\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]
+ERROR[2023-10-22 21:59:49]:: ChatCompletionService:: Data: Faker là ai||Message: OpenAI rejected your authorization, most likely due to an invalid API Key.  Try checking your API Key and see https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for guidance.  Full API response follows: {
+    "error": {
+        "message": "Incorrect API key provided: sk-ZhwKa***************************************2GXv. You can find your API key at https://platform.openai.com/account/api-keys.",
+        "type": "invalid_request_error",
+        "param": null,
+        "code": "invalid_api_key"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in D:\Chat-real-time-kidtalkie\ChatKid-backend\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]

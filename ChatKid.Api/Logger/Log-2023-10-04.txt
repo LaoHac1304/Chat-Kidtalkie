@@ -1,0 +1,10 @@
+ERROR[2023-10-04 16:52:22]:: GoogleAuthenticationService:: Data: ya29.a0AfB_byCB1VkeBIOSlMg-hPZ9PB_y-DXGqOY2HZMZc-k…ikaCgYKAT4SARESFQGOcNnCj-KkKh8MSYNzXF-OPmdG3w0170||Message: Request headers must contain only ASCII characters.||Inner: No inner||StackTrace:    at System.Net.Http.HttpConnection.WriteStringAsync(String s, Boolean async)
+   at System.Net.Http.HttpConnection.WriteStringAsync(String s, Boolean async, Encoding encoding)
+   at System.Net.Http.HttpConnection.WriteHeadersAsync(HttpHeaders headers, String cookiesFromContainer, Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at ChatKid.GoogleServices.GoogleAuthentication.GoogleAuthenticationService.GoogleLogin(String token) in F:\ChatKid\ChatKid.GoogleServices\GoogleAuthentication\GoogleAuthenticationService.cs:line 29||Source: System.Net.Http[ENDLOG]

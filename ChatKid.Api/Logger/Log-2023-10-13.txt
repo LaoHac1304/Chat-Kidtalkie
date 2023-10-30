@@ -1,0 +1,36 @@
+ERROR[2023-10-13 12:46:56]:: FamilyService:: An error occurred while saving the entity changes. See the inner exception for details.||Message: An error occurred while saving the entity changes. See the inner exception for details.||Inner: 23503: update or delete on table "User" violates foreign key constraint "Channel_User_User_id_fkey" on table "Channel_User"
+
+DETAIL: Key (id)=(4ca412e7-87a7-4937-a874-8ec7bf188e43) is still referenced from table "Channel_User".||StackTrace:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ChatKid.DataLayer.EfRepository`1.DeleteAsync(IEnumerable`1 entities) in F:\ChatKid\ChatKid.DataLayer\EfRepository.cs:line 102
+   at ChatKid.Application.Services.UserService.DeleteFamilyUsersAsync(Guid familyId) in F:\ChatKid\ChatKid.Application\Services\UserService.cs:line 154
+   at ChatKid.Application.Services.FamilyService.DeleteAsync(Guid id) in F:\ChatKid\ChatKid.Application\Services\FamilyService.cs:line 118||Source: Microsoft.EntityFrameworkCore.Relational[ENDLOG]
+ERROR[2023-10-13 12:49:55]:: FamilyService:: An error occurred while saving the entity changes. See the inner exception for details.||Message: An error occurred while saving the entity changes. See the inner exception for details.||Inner: 23503: update or delete on table "User" violates foreign key constraint "Channel_User_User_id_fkey" on table "Channel_User"
+
+DETAIL: Key (id)=(4ca412e7-87a7-4937-a874-8ec7bf188e43) is still referenced from table "Channel_User".||StackTrace:    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ChatKid.DataLayer.EfRepository`1.DeleteAsync(IEnumerable`1 entities) in F:\ChatKid\ChatKid.DataLayer\EfRepository.cs:line 102
+   at ChatKid.Application.Services.UserService.DeleteFamilyUsersAsync(Guid familyId) in F:\ChatKid\ChatKid.Application\Services\UserService.cs:line 154
+   at ChatKid.Application.Services.FamilyService.DeleteAsync(Guid id) in F:\ChatKid\ChatKid.Application\Services\FamilyService.cs:line 118||Source: Microsoft.EntityFrameworkCore.Relational[ENDLOG]

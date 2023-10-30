@@ -1,0 +1,13 @@
+ERROR[2023-10-02 19:27:33]:: ChatCompletionService:: Data: string||Message: Error at chat/completions (https://api.openai.com/v1/chat/completions) with HTTP status code: TooManyRequests. Content: {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}
+||Inner: No inner||StackTrace:    at OpenAI_API.EndpointBase.HttpRequestRaw(String url, HttpMethod verb, Object postData, Boolean streaming)
+   at OpenAI_API.EndpointBase.HttpRequest[T](String url, HttpMethod verb, Object postData)
+   at OpenAI_API.EndpointBase.HttpPost[T](String url, Object postData)
+   at OpenAI_API.Chat.ChatEndpoint.CreateChatCompletionAsync(ChatRequest request)
+   at ChatKid.OpenAI.ChatCompletions.ChatCompletionService.GetChatCompletion(String message) in F:\ChatKid\ChatKid.OpenAI\ChatCompletions\ChatCompletionService.cs:line 39||Source: OpenAI_API[ENDLOG]
